@@ -21,6 +21,7 @@
 - Register TMDB API & create an app & get access token
 - GET Data from TMDB movies now playing movie list API
 - create moviesSlice and store movie data in redux store
+- Add moviesList fetching logic in a CUSTOM HOOK
 
 # Features
 

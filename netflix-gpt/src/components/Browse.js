@@ -1,29 +1,23 @@
-import { useEffect } from "react";
+import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
 import Header from "./Header";
-import { API_OPTIONS } from "../utils/constants";
-import { useDispatch } from "react-redux";
-import { addNowPlayingMovies } from "../utils/moviesSlice";
+import MainContainer from "./MainContainer";
+import SecondaryContainer from "./SecondaryContainer";
 
 const Browse = () => {
-  // Fetch data from TMDB API and update store
-  const dispatch = useDispatch();
-  // it's necessary to pass API_OPTIONS here while fetching
-  const getNowPlayingMovies = async () => {
-    const data = await fetch(
-      "https://api.themoviedb.org/3/movie/now_playing",
-      API_OPTIONS
-    );
-    const json = await data.json();
-    console.log(json.results);
-    dispatch(addNowPlayingMovies(json.results));
-  };
-
-  useEffect(() => {
-    getNowPlayingMovies();
-  }, []);
+  useNowPlayingMovies();
   return (
     <div>
       <Header />
+      <MainContainer />
+      <SecondaryContainer />
+      {/*
+        Main Container
+          - Video Background
+          - Video Title
+        Secondary Container
+          - MovieList * n
+            - Cards * n 
+      */}
     </div>
   );
 };
