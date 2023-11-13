@@ -22,6 +22,17 @@
 - GET Data from TMDB movies now playing movie list API
 - create moviesSlice and store movie data in redux store
 - Add moviesList fetching logic in a CUSTOM HOOK
+- Planning a main and secondary container
+- Fetched Data for trailer video using custom hook
+- update store with trailer video data
+- embedded youtube video and make it autoplay and mute
+- Tailwind css classes added for styling
+- Build Secondary component
+- Build Movie List
+- Build Movie Card
+- TMDB Image CDN URL
+- Added Styling
+- Custom Hook For NowPlaying/Upcming/TopRated/Popular Movies
 
 # Features
 
