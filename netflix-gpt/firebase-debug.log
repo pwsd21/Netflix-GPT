@@ -1,0 +1,15 @@
+[debug] [2023-11-09T09:19:25.103Z] ----------------------------------------------------------------------
+[debug] [2023-11-09T09:19:25.107Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\PAWAN\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-11-09T09:19:25.108Z] CLI Version:   12.8.0
+[debug] [2023-11-09T09:19:25.108Z] Platform:      win32
+[debug] [2023-11-09T09:19:25.109Z] Node Version:  v18.18.2
+[debug] [2023-11-09T09:19:25.111Z] Time:          Thu Nov 09 2023 14:49:25 GMT+0530 (India Standard Time)
+[debug] [2023-11-09T09:19:25.111Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-09T09:19:25.119Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-11-09T09:19:25.334Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-09T09:19:25.335Z] > authorizing via signed-in user (pawansachdeva1998@gmail.com)
+[debug] [2023-11-09T09:19:25.336Z] [iam] checking project netflixgpt-c8607 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-11-09T09:19:25.338Z] > refreshing access token with scopes: []
+[debug] [2023-11-09T09:19:25.340Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-11-09T09:19:25.340Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
