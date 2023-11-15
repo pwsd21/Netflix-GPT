@@ -33,6 +33,8 @@
 - TMDB Image CDN URL
 - Added Styling
 - Custom Hook For NowPlaying/Upcming/TopRated/Popular Movies
+- GPT Search Feature
+- GPT Search Toggle with state management in redux store
 
 # Features
 
