@@ -33,6 +33,18 @@
 - TMDB Image CDN URL
 - Added Styling
 - Custom Hook For NowPlaying/Upcming/TopRated/Popular Movies
+- GPT Search Feature
+- GPT Search Toggle with state management in redux store
+- GPT Search Bar
+- Multi-Language feature
+- Integrate GPT APIs ( get OpenAI Key )
+- Gpt Search API Call
+- Fetched Gpt Movie Suggestions from TMDB
+- Gpt Slice , added data over there
+- Reused MovieList component to make movie suggestion container
+- Memoization
+- Added .env file and added it to .gitignore
+- Made Responsive
 
 # Features
 

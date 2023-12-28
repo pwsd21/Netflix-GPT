@@ -44,7 +44,6 @@ const Login = () => {
         .then((userCredential) => {
           // Signed up
           const user = userCredential.user;
-          console.log(user);
           updateProfile(auth.currentUser, {
             displayName: name.current.value,
             photoURL: USER_AVATAR,
@@ -92,7 +91,6 @@ const Login = () => {
         .catch((error) => {
           const errorCode = error.code;
           const errorMessage = error.message;
-          console.log(errorCode + errorMessage);
           setErrorMessage("*User Not Found");
         });
     }
@@ -102,11 +100,15 @@ const Login = () => {
     <div>
       <Header />
       <div className="absolute">
-        <img src={APP_BACKGROUND} alt="logo" />
+        <img
+          className="h-screen md:h-auto object-cover"
+          src={APP_BACKGROUND}
+          alt="logo"
+        />
       </div>
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="absolute w-3/12 p-12 bg-black my-36 mx-auto right-0 left-0 bg-opacity-80"
+        className="absolute w-full md:w-3/12 p-3 md:p-12 bg-black my-36 mx-auto right-0 left-0 bg-opacity-80"
       >
         <h1 className="font-bold text-white text-3xl py-4 ">
           {isSignIn ? "Sign In" : "Sign Out"}
